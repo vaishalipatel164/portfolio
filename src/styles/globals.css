@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #020617;
+  color: white;
+  font-family: Arial, sans-serif;
+  cursor: none;
+}
+
+
+
+/* Small dot */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: rgba(34, 211, 238, 0.9);
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.7);
+}
+
+/* Outer ring */
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid rgba(34, 211, 238, 0.6);
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* Disable default cursor on clickable */
+a,
+button,
+input,
+textarea {
+  cursor: none;
+}
